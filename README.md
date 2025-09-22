@@ -1,33 +1,31 @@
 FYEV: AI-Powered Electric Vehicle Recommender
 
-Vision: Powering India’s “EV Mission” by simplifying EV adoption through personalized recommendations, education, and accessibility.
+Powering India’s EV Mission – Helping users discover the perfect electric vehicle with AI guidance, interactive search, and real-world insights.
 
-FYEV is a full-stack web application designed to help users find the perfect electric vehicle using AI-driven guidance and an interactive search engine. It provides actionable insights to make EV buying easier, reduces range anxiety, and educates consumers about sustainable mobility.
+🚀 Features
 
-Key Features
+AI Advisor: Personalized EV recommendations using Gemini API and natural language queries.
 
-AI Advisor: Uses the Gemini API to understand natural language queries and deliver personalized EV recommendations based on lifestyle and preferences.
+Advanced EV Search: Filter and explore a comprehensive EV dataset in real-time.
 
-Advanced EV Search: Interactive filtering engine powered by Pandas for real-time exploration of a comprehensive EV dataset.
+Nearest EV Station Locator: Find nearby charging stations on an interactive map.
 
-Nearest EV Station Locator: Visual map to help users find nearby public charging stations, reducing range anxiety.
+Consumer Education: Learn about EV benefits, savings, and environmental impact.
 
-Consumer Education: Modules that explain EV benefits, cost savings, and environmental impact.
+Secure Login: Passwordless authentication with OTP via SendGrid and user data in MongoDB.
 
-Secure Authentication: Passwordless OTP-based login with SendGrid API and MongoDB user management.
+📈 Roadmap
 
-Future Roadmap
+Predictive battery health ML model
 
-Predictive Battery Health ML model
+EV green impact calculator
 
-Quantifying the green effect of EV adoption
+Payoff period analysis
 
-Payoff period calculator to address high upfront cost concerns
+Comparative EV safety study
 
-Comparative safety study between EV models
+Intelligent EV route planner
 
-Intelligent EV Route Planner
-
-Technologies Used
+🛠 Technologies
 
 Python, Flask, JavaScript, HTML5, Tailwind CSS, Pandas, MongoDB, Gemini API, SendGrid API
