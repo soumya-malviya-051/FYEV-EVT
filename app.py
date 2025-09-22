@@ -20,11 +20,11 @@ CORS(app, supports_credentials=True, resources={r"/*": {"origins": "*"}})
 bcrypt = Bcrypt(app)
 
 # --- 🔽 ACTION REQUIRED: PASTE YOUR KEYS AND SECRETS HERE 🔽 ---
-MONGO_URI = "mongodb+srv://soumya_malviya:BcQGYg7XCLDiCEJv@cluster0.v42vjhc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-SENDGRID_API_KEY = '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'
-SENDER_EMAIL = 'fyevofficial@gmail.com'
-GEMINI_API_KEY = "AIzaSyCs3L2OjnD5YZ-wCLvdPSEqgqRXgU8HtwY"
-app.secret_key = 'oMBiThneF91Nn7hkKhyoD4UrN5'
+MONGO_URI = ""
+SENDGRID_API_KEY = ''
+SENDER_EMAIL = ''
+GEMINI_API_KEY = ""
+app.secret_key = ''
 # --- 🔼 ACTION REQUIRED: PASTE YOUR KEYS AND SECRETS HERE 🔼 ---
 
 
@@ -198,4 +198,5 @@ def add_no_cache_headers(response):
 
 # --- Main Execution ---
 if __name__ == '__main__':
+
     app.run(debug=True)
