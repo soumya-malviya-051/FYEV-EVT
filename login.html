@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FYEV | Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white flex flex-col h-screen">
+    <nav class="bg-gray-900/80 backdrop-blur-sm">
+        <div class="container mx-auto px-6 py-4">
+            <a href="index.html" class="text-2xl font-bold text-white">FYEV</a>
+        </div>
+    </nav>
+    <main class="flex-1 flex items-center justify-center">
+        <div class="w-full max-w-md bg-gray-800 rounded-2xl shadow-2xl p-8">
+            <h2 id="form-title" class="text-3xl font-bold text-center mb-6">Log In with Email</h2>
+            <div id="error-message" class="text-red-400 text-center mb-4 hidden"></div>
+            <div id="success-message" class="text-green-400 text-center mb-4 hidden"></div>
+
+            <form id="email-form">
+                <div class="mb-4">
+                    <label for="email" class="block mb-2 text-sm font-bold text-gray-400">Email Address</label>
+                    <input type="email" id="email" class="w-full p-3 bg-gray-900 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                </div>
+                <button type="submit" class="w-full bg-green-500 text-white font-bold py-3 px-6 rounded-lg uppercase hover:bg-green-600 transition">Send Login Code</button>
+            </form>
+
+            <form id="otp-form" class="hidden">
+                <div class="mb-6">
+                    <label for="otp" class="block mb-2 text-sm font-bold text-gray-400">Enter Code Sent To Your Email</label>
+                    <input type="text" id="otp" inputmode="numeric" pattern="[0-9]{6}" class="w-full p-3 bg-gray-900 rounded-lg border border-gray-700 text-center text-2xl tracking-[.5em] focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white font-bold py-3 px-6 rounded-lg uppercase hover:bg-blue-600 transition">Verify & Log In</button>
+            </form>
+
+            <div class="mt-6 text-center">
+                <p class="text-gray-400">Don't have an account? <a href="register.html" class="text-green-400 hover:underline">Register</a></p>
+            </div>
+        </div>
+    </main>
+    <script src="login.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+@app.route('/get_car_prices', methods=['GET'])

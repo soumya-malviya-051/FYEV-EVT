@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FYEV | Advanced EV Search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <nav class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">FYEV</a>
+            <div id="nav-links" class="flex items-center space-x-8 text-lg">
+                </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-8">
+        <div class="bg-gray-800 p-8 rounded-2xl shadow-xl mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div>
+                    <label for="min-range" class="block mb-2 text-sm font-bold text-gray-400">Minimum Range: <span id="range-value" class="text-green-400 font-bold">250 km</span></label>
+                    <input type="range" id="min-range" min="0" max="1000" value="250" step="10" class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer range-thumb">
+                </div>
+                <div>
+                    <label for="max-price" class="block mb-2 text-sm font-bold text-gray-400">Max Price: <span id="price-value" class="text-green-400 font-bold">$60,000</span></label>
+                    <input type="range" id="max-price" min="10000" max="200000" value="60000" step="1000" class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer range-thumb">
+                </div>
+                <div>
+                    <label for="min-safety" class="block mb-2 text-sm font-bold text-gray-400">Min Safety Rating: <span id="safety-value" class="text-green-400 font-bold">3 / 5</span></label>
+                    <input type="range" id="min-safety" min="1" max="5" value="3" step="1" class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer range-thumb">
+                </div>
+                <div>
+                    <label for="min-popularity" class="block mb-2 text-sm font-bold text-gray-400">Min Popularity: <span id="popularity-value" class="text-green-400 font-bold">2.5 / 5</span></label>
+                    <input type="range" id="min-popularity" min="0" max="5" value="2.5" step="0.1" class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer range-thumb">
+                </div>
+                <div>
+                    <label for="max-charge-time" class="block mb-2 text-sm font-bold text-gray-400">Max Charge Time: <span id="charge-time-value" class="text-green-400 font-bold">8.0 hrs</span></label>
+                    <input type="range" id="max-charge-time" min="0" max="24" value="8" step="0.5" class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer range-thumb">
+                </div>
+            </div>
+        </div>
+
+        <div id="loading" class="text-center hidden py-10">
+            <div class="inline-flex items-center space-x-3">
+                <div class="css-loader"></div>
+                <span class="text-lg text-gray-300">Finding your EV...</span>
+            </div>
+        </div>
+        <div id="results" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+    </main>
+
+    <script src="auth.js"></script>
+    <script src="find-ev-api.js"></script>
+    <script src="protect.js"></script>
+</body>
+</html>
